@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h2>Sistema de Login</h2>
+            <form name="form">
+                Login: <input type="text" id="iId" name = "log"/>
+                Senha: <input type="password" id ="iPass" name = "pass"/>
+                <button type="button" id="login" class="log" onmouseover="mudarCorBtn(this, true)" onmouseout="mudarCorBtn(this, false)" onclick="btnClick()">Entrar</button>
+                <p> </p>
+            </form>
+        </div>
+        <p> </p>
+        <div id = "label1">
+            <h2>mundo tenta conter segunda onda da covid-19 sem novos confinamentos</h2>
+            <p>Da França ao Canadá, passando pelo Reino Unido e China, o mundo multiplica medidas sanitárias para conter a segunda onda da pandemia da covid-19, que nesta terça-feira deu uma folga à Austrália, onde não foram registradas novas mortes pela primeira vez em dois meses.</p>
+            <form id="form1">
+                <button type = "button" name="like" class = "like" onmouseover="mudarCor(0, true, this)" onmouseout="mudarCor(0, false, this)" onclick="mudarCorLike(0, document.getElementById('form1'))">gostei</button>
+                <button type = "button" name = "deslike" class="deslike" onmouseover="mudarCorD(0, true, this)" onmouseout="mudarCorD(0, false, this)" onclick="mudarCorDeslike(0, document.getElementById('form1'))">não gostei</button>
+                <button type = "button" onclick="document.getElementById('label1').style.display='none'">fechar</button>
+            </form>
+            
+        </div>
+        <p> </p>
+        <div id = "label2">
+            <h2>China afirma que vacina contra covid-19 pode estar disponível à população em novembro</h2>
+            <p>A vacina contra a covid-19 desenvolvida na China pode estar pronta para aplicação em larga escala a partir de novembro, afirmou um alto funcionário do governo à imprensa estatal, enquanto se intensifica a corrida mundial para alcançar a fase final de testes clínicos.</p>
+            <form id="form2">
+                <button type = "button" name = "like" class = "like" onmouseover="mudarCor(1, true, this)" onmouseout="mudarCor(1, false, this)" onclick="mudarCorLike(1, document.getElementById('form2'))">gostei</button>
+                <button type = "button" name = "deslike" class = "deslike" onmouseover="mudarCorD(1, true, this)" onmouseout="mudarCorD(1, false, this)" onclick="mudarCorDeslike(1, document.getElementById('form2'))">não gostei</button>
+                <button type = "button" onclick="document.getElementById('label2').style.display='none'">fechar</button>
+            </form>
+        </div>
+        <p> </p>
+        <div id="label3">
+            <h2>Austrália não registra morte por coronavírus pela primeira vez em dois meses</h2>
+            <p>A Austrália não registrou nenhuma morte por coronavírus pela primeira vez em dois meses hoje, depois que desaceleração dos novos casos permitiu aliviar o confinamento na cidade de Melboune, a segunda maior cidade do país.</p>
+            <form id="form3">
+                <button type = "button" name = "like" class = "like" onmouseover="mudarCor(2, true, this)" onmouseout="mudarCor(2, false, this)" onclick="mudarCorLike(2, document.getElementById('form3'))">gostei</button>
+                <button type = "button" name = "deslike" class = "deslike" onmouseover="mudarCorD(2, true, this)" onmouseout="mudarCorD(2, false, this)" onclick="mudarCorDeslike(2, document.getElementById('form3'))">não gostei</button>
+                <button type = "button" onclick="document.getElementById('label3').style.display='none'">fechar</button>
+            </form>
+        </div>
+        <p> </p>
+        <div id="label4">
+            <h2>China confina cidade na fronteira com Mianmar após três casos de covid-19</h2>
+            <p>Os 210 mil habitantes da cidade chinesa de Ruili, na província de Yunnan, na fronteira com Mianmar, foram confinados após a detecção de três casos de covid-19, anunciou hoje a prefeitura.</p>
+            <form id="form4">
+                <button type = "button" name = "like" class = "like" onmouseover="mudarCor(3, true, this)" onmouseout="mudarCor(3, false, this)" onclick="mudarCorLike(3, document.getElementById('form4'))">gostei</button>
+                <button type = "button" name = "deslike" class = "deslike" onmouseover="mudarCorD(3, true, this)" onmouseout="mudarCorD(3, false, this)" onclick="mudarCorDeslike(3, document.getElementById('form4'))">não gostei</button>
+                <button type = "button" onclick="document.getElementById('label4').style.display='none'">fechar</button>
+            </form>
+        </div>
+    </body>
+</html>

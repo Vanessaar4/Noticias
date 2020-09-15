@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(72, 110, 98);
+    
+}
+
+.like{
+    background-color: rgb(73, 104, 208);
+    color: white;
+}
+
+.deslike{
+    background-color: rgb(253, 104, 104);
+    color:white;
+}
+
+div{
+    background-color: white;
+    text-align:center;
+    border: 1px solid;
+    border-color: black;
+}
+
+form input[type=text],
+form input[type=password]{
+    width: 10%;
+    height: 40px;
+    border: 2px solid rgb(12, 12, 12);
+    padding-left: 10px;
+}
+
+
+form input[type=text]:hover{
+    border:2px solid green;
+
+}
+
+form input[type=password]:hover{
+    border:2px solid green;
+
+}
+
+form[form=login]{
+    color: indigo;
+}
+
+button{
+    cursor: pointer;
+}
+
+#login{
+    background-color:rgb(43, 187, 43);
+    color: white;
+    
+}
