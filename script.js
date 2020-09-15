@@ -45,10 +45,10 @@ function mudarCorBtn(btn, valor){
 function btnClick(){
     if(form.log.value == "" || form.pass.value == ""){
         if (form.log.value == ""){
-            document.getElementById("iId").style.borderColor = "rgb(255, 0, 0)"
+            document.getElementById("iId")
         }
         if (form.pass.value == ""){
-            document.getElementById("iPass").style.borderColor = "rgb(255, 0, 0)"
+            document.getElementById("iPass")
         }
     }else{
         alert("Login para o " + form.log.value + " efetuado com sucesso!");
