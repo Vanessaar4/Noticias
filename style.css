@@ -28,14 +28,12 @@ form input[type=password]{
     padding-left: 10px;
 }
 
-
-form input[type=text]:hover{
-    border:2px solid green;
-
+form input[type = text]:focus{
+    border: 4px solid green;
 }
 
-form input[type=password]:hover{
-    border:2px solid green;
+form input[type = password]:focus{
+    border:4px solid green;
 
 }
 
