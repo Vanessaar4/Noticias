@@ -54,7 +54,3 @@ function btnClick(){
         alert("Login para o " + form.log.value + " efetuado com sucesso!");
     }
 }
-
-function teste(val){
-    val.like.style.backgroundColor = "rgb(0, 0, 110)";
-}
