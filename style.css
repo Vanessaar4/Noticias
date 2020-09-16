@@ -23,7 +23,7 @@ div{
 form input[type=text],
 form input[type=password]{
     width: 10%;
-    height: 40px;
+    height: 30px;
     border: 2px solid rgb(12, 12, 12);
     padding-left: 10px;
 }
@@ -48,5 +48,4 @@ button{
 #login{
     background-color:rgb(43, 187, 43);
     color: white;
-    
 }

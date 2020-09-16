@@ -9,8 +9,8 @@
         <div>
             <h2>Sistema de Login</h2>
             <form name="form">
-                Login: <input type="text" id="iId" name = "log"/>
-                Senha: <input type="password" id ="iPass" name = "pass"/>
+                Login: <input type="text" id="iId" name = "log" onfocus = "selecionado(this)" onblur = "descelecionado(this)"/>
+                Senha: <input type="password" id ="iPass" name = "pass" onfocus="selecionado(this)" onblur = "descelecionado(this)"/>
                 <button type="button" id="login" class="log" onmouseover="mudarCorBtn(this, true)" onmouseout="mudarCorBtn(this, false)" onclick="btnClick()">Entrar</button>
                 <p> </p>
             </form>
@@ -56,5 +56,6 @@
                 <button type = "button" onclick="document.getElementById('label4').style.display='none'">fechar</button>
             </form>
         </div>
+
     </body>
 </html>

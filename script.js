@@ -54,3 +54,11 @@ function btnClick(){
         alert("Login para o " + form.log.value + " efetuado com sucesso!");
     }
 }
+
+function selecionado(inp){
+    inp.style.borderColor = "rgb(0, 128, 0)";
+}
+
+function descelecionado(inp){
+    inp.style.borderColor = "rgb(12, 12, 12)";
+}
