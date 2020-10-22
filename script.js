@@ -22,16 +22,27 @@ function mudarCorD(index, valor, btn){
 }
 
 function mudarCorLike(index, val){
-    val.like.style.backgroundColor = "rgb(0, 0, 110)";
-    val.deslike.style.backgroundColor = "rgb(253, 104, 104)"
-    console.log(conjuntos[index]);
-    conjuntos[index] = true;
+    if(conjuntos[index] == false){
+        val.like.style.backgroundColor = "rgb(0, 0, 110)";
+        val.deslike.style.backgroundColor = "rgb(253, 104, 104)"
+        conjuntos[index] = true;
+        fetch('http://demo4415299.mockable.io/like')
+            .then(responseStream => {
+                responseStream.json().then(data => alert(data.msg))
+            })
+    }
 }
 
 function mudarCorDeslike(index, val){
-    val.deslike.style.backgroundColor = "rgb(200, 0, 0)";
-    val.like.style.backgroundColor = "rgb(73, 104, 208)";
-    conjuntos[index] = true;
+    if(conjuntos[index] == false){
+        val.deslike.style.backgroundColor = "rgb(200, 0, 0)";
+        val.like.style.backgroundColor = "rgb(73, 104, 208)";
+        conjuntos[index] = true;
+        fetch('http://demo4415299.mockable.io/dislike')
+            .then(responseStream => {
+                responseStream.json().then(data => alert(data.msg))
+            })
+    }
 }
 
 function mudarCorBtn(btn, valor){
@@ -51,7 +62,13 @@ function btnClick(){
             document.getElementById("iPass").style.borderColor = "rgb(255, 0, 0)"
         }
     }else{
-        alert("Login para o " + form.log.value + " efetuado com sucesso!");
+        fetch('http://demo4415299.mockable.io/login', {
+            method: 'post'
+        })
+        .then(responseStream => {
+            responseStream.json().then(data => alert("Login para o " + form.log.value + " " + data.msg))
+        })
+        //alert("Login para o " + form.log.value + " efetuado com sucesso!");
     }
 }
 
