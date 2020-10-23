@@ -38,14 +38,3 @@ button:hover{
     color: black;
     transition: background-color 2s;
 }
-
-table{
-    border-collapse: collapse;
-}
-
-table, td, th {
-    border: 1px solid black;
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-top: 4px;
-}
