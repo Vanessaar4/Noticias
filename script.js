@@ -1,11 +1,4 @@
 var conjuntos = [false, false, false, false];
-var user = {
-    nome: "",
-    login: "",
-    senha: "",
-    cpf: "",
-    telefone: ""
-}
 
 function mudarCor(index, valor, btn){
     console.log(conjuntos[index]);
@@ -69,22 +62,12 @@ function btnClick(){
             document.getElementById("iPass").style.borderColor = "rgb(255, 0, 0)"
         }
     }else{
-        console.log(user);
-        if(user.login != ""){
-            var aux = document.getElementById("form");
-            if(aux.log.value == user.login && aux.pass.value == user.senha){
-                fetch('http://demo4415299.mockable.io/login', {
-                    method: 'post'
-                })
-                .then(responseStream => {
-                    responseStream.json().then(data => alert("Login para o " + form.log.value + " " + data.msg))
-                })
-            } else {
-                alert("login ou senha digitado incorretamente");
-            }
-        } else {
-            alert("nenhuma conta cadastrada");
-        }
+        fetch('http://demo4415299.mockable.io/login', {
+            method: 'post'
+        })
+        .then(responseStream => {
+            responseStream.json().then(data => alert("Login para o " + form.log.value + " " + data.msg))
+        })
     }
 }
 
@@ -127,11 +110,6 @@ function mascara_tel(){
 function cad(){
     var aux = document.getElementById("formDD");
     if(aux.login.value != "" && aux.senha.value != ""){
-        user.nome = aux.nome.value;
-        user.login = aux.login.value;
-        user.senha = aux.senha.value;
-        user.cpf = aux.cpf.value;
-        user.telefone = aux.telefone.value;
         fetch('http://demo4415299.mockable.io/cadastro', {
             method: 'post'
         })
@@ -139,7 +117,6 @@ function cad(){
             responseStream.json().then(data => alert("Usuário cadastrado " + data.msg))
             .catch(error => alert(error));
         })
-        //falta voltar para a pagina inicial
     } else {
         alert("usuário e senha precisam conter algum valor");
     }
